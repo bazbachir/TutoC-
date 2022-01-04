@@ -1,0 +1,127 @@
+\hypertarget{BAZEMLAL_8cpp}{}\doxysection{B\+A\+Z\+E\+M\+L\+A\+L.\+cpp File Reference}
+\label{BAZEMLAL_8cpp}\index{BAZEMLAL.cpp@{BAZEMLAL.cpp}}
+
+
+Création de point, cercle et ensemble.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for B\+A\+Z\+E\+M\+L\+A\+L.\+cpp\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoint}{Point}}
+\begin{DoxyCompactList}\small\item\em classe permettant de créer et de manipuler des point \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classCercle}{Cercle}}
+\begin{DoxyCompactList}\small\item\em classe permettant de créer et de manipuler des cercles \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classEnsemble}{Ensemble}}
+\begin{DoxyCompactList}\small\item\em classe permettant de créer un ensemble de points \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{BAZEMLAL_8cpp_aebd4b112370b158bae0c345ae8b5da44}{distance}} (\mbox{\hyperlink{classPoint}{Point}} const \&a, \mbox{\hyperlink{classPoint}{Point}} const \&b)
+\item 
+ostream \& \mbox{\hyperlink{BAZEMLAL_8cpp_a25a9dbac554401211ba822f48185e0df}{operator$<$$<$}} (ostream \&s, const \mbox{\hyperlink{classPoint}{Point}} \&a)
+\item 
+\mbox{\hyperlink{classPoint}{Point}} \mbox{\hyperlink{BAZEMLAL_8cpp_a96f6a3fd676e84673695954a9c38f9fc}{operator+}} (const \mbox{\hyperlink{classPoint}{Point}} \&a, const \mbox{\hyperlink{classPoint}{Point}} \&b)
+\item 
+\mbox{\hyperlink{classPoint}{Point}} \mbox{\hyperlink{BAZEMLAL_8cpp_adcfb066ad8bf3183bf2d39c2391b0757}{operator/}} (const \mbox{\hyperlink{classPoint}{Point}} \&a, float r)
+\item 
+\mbox{\Hypertarget{BAZEMLAL_8cpp_a7b4006bb6611318a2aeb36f49b1d26b4}\label{BAZEMLAL_8cpp_a7b4006bb6611318a2aeb36f49b1d26b4}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&s, const \mbox{\hyperlink{classCercle}{Cercle}} \&a)
+\item 
+\mbox{\Hypertarget{BAZEMLAL_8cpp_af1d7aa251a18927e27391c179e14313d}\label{BAZEMLAL_8cpp_af1d7aa251a18927e27391c179e14313d}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&s, const \mbox{\hyperlink{classEnsemble}{Ensemble}} \&a)
+\item 
+\mbox{\Hypertarget{BAZEMLAL_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{BAZEMLAL_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Création de point, cercle et ensemble. 
+
+\begin{DoxyAuthor}{Author}
+Bachir\+\_\+\+B\+A\+Z\+E\+M\+L\+AL 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{BAZEMLAL_8cpp_aebd4b112370b158bae0c345ae8b5da44}\label{BAZEMLAL_8cpp_aebd4b112370b158bae0c345ae8b5da44}} 
+\index{BAZEMLAL.cpp@{BAZEMLAL.cpp}!distance@{distance}}
+\index{distance@{distance}!BAZEMLAL.cpp@{BAZEMLAL.cpp}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily float distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoint}{Point}} const \&}]{a,  }\item[{\mbox{\hyperlink{classPoint}{Point}} const \&}]{b }\end{DoxyParamCaption})}
+
+Fonction amie qui permet de calculer la distance entre deux points
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: le premier point \\
+\hline
+{\em b} & \+: le deuxième point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la distance entre les deux points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{BAZEMLAL_8cpp_a96f6a3fd676e84673695954a9c38f9fc}\label{BAZEMLAL_8cpp_a96f6a3fd676e84673695954a9c38f9fc}} 
+\index{BAZEMLAL.cpp@{BAZEMLAL.cpp}!operator+@{operator+}}
+\index{operator+@{operator+}!BAZEMLAL.cpp@{BAZEMLAL.cpp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoint}{Point}} operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPoint}{Point}} \&}]{a,  }\item[{const \mbox{\hyperlink{classPoint}{Point}} \&}]{b }\end{DoxyParamCaption})}
+
+surcharge de l\textquotesingle{}oprateur d\textquotesingle{}addition (+)
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: le premier point \\
+\hline
+{\em b} & \+: le deuxième point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le point résultant 
+\end{DoxyReturn}
+\mbox{\Hypertarget{BAZEMLAL_8cpp_adcfb066ad8bf3183bf2d39c2391b0757}\label{BAZEMLAL_8cpp_adcfb066ad8bf3183bf2d39c2391b0757}} 
+\index{BAZEMLAL.cpp@{BAZEMLAL.cpp}!operator/@{operator/}}
+\index{operator/@{operator/}!BAZEMLAL.cpp@{BAZEMLAL.cpp}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoint}{Point}} operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPoint}{Point}} \&}]{a,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+surcharge de l\textquotesingle{}opérateur de division d\textquotesingle{}un point sur un réel
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: le point \\
+\hline
+{\em b} & \+: le réel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le point résultant 
+\end{DoxyReturn}
+\mbox{\Hypertarget{BAZEMLAL_8cpp_a25a9dbac554401211ba822f48185e0df}\label{BAZEMLAL_8cpp_a25a9dbac554401211ba822f48185e0df}} 
+\index{BAZEMLAL.cpp@{BAZEMLAL.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BAZEMLAL.cpp@{BAZEMLAL.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{s,  }\item[{const \mbox{\hyperlink{classPoint}{Point}} \&}]{a }\end{DoxyParamCaption})}
+
+surcharge de l\textquotesingle{}oprateur d\textquotesingle{}affichage (flot de sortie)
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \+: le flot de sortie \\
+\hline
+{\em b} & \+: le point à afficher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le flot de sortie (pour permettre l\textquotesingle{}enchainement) 
+\end{DoxyReturn}
