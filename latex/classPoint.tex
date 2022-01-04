@@ -1,0 +1,186 @@
+\hypertarget{classPoint}{}\doxysection{Point Class Reference}
+\label{classPoint}\index{Point@{Point}}
+
+
+classe permettant de créer et de manipuler des point  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoint_ad92f2337b839a94ce97dcdb439b4325a}{Point}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur vide. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoint_a2a41bc3f1dfd34274d8817b2b9fcdad5}{Point}} (float a, float b)
+\begin{DoxyCompactList}\small\item\em Constructeur avec deux paramètres. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoint_a395fa04b4ec126b66fc053f829a30cc1}{$\sim$\+Point}} ()
+\begin{DoxyCompactList}\small\item\em destructeur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classPoint_a1e124ae038533aedea048a8ccf3c4356}{Ensemble}}
+\begin{DoxyCompactList}\small\item\em définition de la classe ensemble comme amie de la classe point \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classPoint_aebd4b112370b158bae0c345ae8b5da44}{distance}} (\mbox{\hyperlink{classPoint}{Point}} const \&a, \mbox{\hyperlink{classPoint}{Point}} const \&b)
+\begin{DoxyCompactList}\small\item\em calcule de distance \end{DoxyCompactList}\item 
+ostream \& \mbox{\hyperlink{classPoint_a25a9dbac554401211ba822f48185e0df}{operator$<$$<$}} (ostream \&s, const \mbox{\hyperlink{classPoint}{Point}} \&a)
+\begin{DoxyCompactList}\small\item\em surcharge de l\textquotesingle{}opérateur $<$$<$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoint}{Point}} \mbox{\hyperlink{classPoint_a96f6a3fd676e84673695954a9c38f9fc}{operator+}} (const \mbox{\hyperlink{classPoint}{Point}} \&a, const \mbox{\hyperlink{classPoint}{Point}} \&b)
+\begin{DoxyCompactList}\small\item\em surcharge de l\textquotesingle{}opérateur + \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoint}{Point}} \mbox{\hyperlink{classPoint_acf90aaa2654a60017587805b80d1b774}{operator/}} (const \mbox{\hyperlink{classPoint}{Point}} \&a, float b)
+\begin{DoxyCompactList}\small\item\em surcharge de l\textquotesingle{}opérateur + \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe permettant de créer et de manipuler des point 
+
+Cette classe permet de créer des point, d\textquotesingle{}additioner des points, de calculer la distance entre les points et leur affichage 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoint_ad92f2337b839a94ce97dcdb439b4325a}\label{classPoint_ad92f2337b839a94ce97dcdb439b4325a}} 
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{Point()}{Point()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Point\+::\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur vide. 
+
+L\textquotesingle{}ordonnée du point
+
+Constructeur vide de la classe \mbox{\hyperlink{classPoint}{Point}}
+
+Le code source des différents classes et fonctions \mbox{\Hypertarget{classPoint_a2a41bc3f1dfd34274d8817b2b9fcdad5}\label{classPoint_a2a41bc3f1dfd34274d8817b2b9fcdad5}} 
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{Point()}{Point()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Point\+::\+Point (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec deux paramètres. 
+
+Constructeur à deux paramètres de la classe \mbox{\hyperlink{classPoint}{Point}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: L\textquotesingle{}abscisse du point \\
+\hline
+{\em b} & \+: L\textquotesingle{}ordonnée du point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoint_a395fa04b4ec126b66fc053f829a30cc1}\label{classPoint_a395fa04b4ec126b66fc053f829a30cc1}} 
+\index{Point@{Point}!````~Point@{$\sim$Point}}
+\index{````~Point@{$\sim$Point}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{$\sim$Point()}{~Point()}}
+{\footnotesize\ttfamily Point\+::$\sim$\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructeur 
+
+destructeur de la classe \mbox{\hyperlink{classPoint}{Point}} 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoint_aebd4b112370b158bae0c345ae8b5da44}\label{classPoint_aebd4b112370b158bae0c345ae8b5da44}} 
+\index{Point@{Point}!distance@{distance}}
+\index{distance@{distance}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{distance}{distance}}
+{\footnotesize\ttfamily float distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoint}{Point}} const \&}]{a,  }\item[{\mbox{\hyperlink{classPoint}{Point}} const \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+calcule de distance 
+
+Fonction amie qui permet de calculer la distance entre deux points
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: le premier point \\
+\hline
+{\em b} & \+: le deuxième point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la distance entre les deux points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoint_a1e124ae038533aedea048a8ccf3c4356}\label{classPoint_a1e124ae038533aedea048a8ccf3c4356}} 
+\index{Point@{Point}!Ensemble@{Ensemble}}
+\index{Ensemble@{Ensemble}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{Ensemble}{Ensemble}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classEnsemble}{Ensemble}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+définition de la classe ensemble comme amie de la classe point 
+
+définition de la classe ensmble comme amie de la classe point pour lui permettre l\textquotesingle{}acces au coordonnées x et y \mbox{\Hypertarget{classPoint_a96f6a3fd676e84673695954a9c38f9fc}\label{classPoint_a96f6a3fd676e84673695954a9c38f9fc}} 
+\index{Point@{Point}!operator+@{operator+}}
+\index{operator+@{operator+}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{operator+}{operator+}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoint}{Point}} operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPoint}{Point}} \&}]{a,  }\item[{const \mbox{\hyperlink{classPoint}{Point}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+surcharge de l\textquotesingle{}opérateur + 
+
+surcharge de l\textquotesingle{}oprateur d\textquotesingle{}addition (+)
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: le premier point \\
+\hline
+{\em b} & \+: le deuxième point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le point résultant 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoint_acf90aaa2654a60017587805b80d1b774}\label{classPoint_acf90aaa2654a60017587805b80d1b774}} 
+\index{Point@{Point}!operator/@{operator/}}
+\index{operator/@{operator/}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{operator/}{operator/}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoint}{Point}} operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPoint}{Point}} \&}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+surcharge de l\textquotesingle{}opérateur + 
+
+surcharge de l\textquotesingle{}opérateur de division d\textquotesingle{}un point sur un réel
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: le point \\
+\hline
+{\em b} & \+: le réel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le point résultant 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoint_a25a9dbac554401211ba822f48185e0df}\label{classPoint_a25a9dbac554401211ba822f48185e0df}} 
+\index{Point@{Point}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{s,  }\item[{const \mbox{\hyperlink{classPoint}{Point}} \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+surcharge de l\textquotesingle{}opérateur $<$$<$ 
+
+surcharge de l\textquotesingle{}oprateur d\textquotesingle{}affichage (flot de sortie)
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \+: le flot de sortie \\
+\hline
+{\em b} & \+: le point à afficher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le flot de sortie (pour permettre l\textquotesingle{}enchainement) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{BAZEMLAL_8cpp}{B\+A\+Z\+E\+M\+L\+A\+L.\+cpp}}\end{DoxyCompactItemize}
